@@ -1,0 +1,14 @@
+{
+    "presets": [
+        ["@babel/preset-env", {
+            "targets": {
+                "node": "current"
+            }
+        }] // 通过这个babel插件，传入一些配置项，对当前的node版本进行一些ems语法转换，转换为可以识别的cjs规范语法，使得jest 执行时不会报错
+    ]
+}
+
+// esm语法能在node环境运行的机制：
+// 当运行 npm run jest时
+// jest 内部集成了 babel-jest，会去检测你内部是否安装了babel-core, 取.babelrc配置
+// 在运行测试之前，结合babel,把你的代码做一次转化。再去运行转化之后的代码进行测试
