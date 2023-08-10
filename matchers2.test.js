@@ -1,4 +1,4 @@
-test('test2-记住一些常用的匹配器就行了', () => {
+test('记住一些常用的匹配器就行了', () => {
     // toBe() 匹配器 matchers
     expect(10).toBe(10);
 

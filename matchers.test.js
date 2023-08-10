@@ -62,4 +62,10 @@ test('测试2', () => {
 
 // git init 
 // git add . 
-// git commit -m "version 1"
+// git commit -m "version 1" o模式需要结合gi使用
+// a --watchAll 测试文件用例
+// o --watch 结合git使用，判断status变化的文件去走测试用例
+// f 只会运行之前没通过的测试用例
+// t 过滤模式 filter 过滤出一些文件去特使
+// q 退出
+// p watchAll时,p模式才会存在，p模式会去匹配当前更改的文件名，一起跑测试用例
