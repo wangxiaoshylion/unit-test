@@ -1,4 +1,4 @@
-test('记住一些常用的匹配器就行了', () => {
+test('test2-记住一些常用的匹配器就行了', () => {
     // toBe() 匹配器 matchers
     expect(10).toBe(10);
 
@@ -27,7 +27,7 @@ test('记住一些常用的匹配器就行了', () => {
     expect(e).not.toBeFalsy();
 });
 
-test('测试2', () => {
+test('test2-测试2', () => {
     // 数字相关的匹配器
     const count = 10;
     expect(10).toBeGreaterThan(9);
@@ -50,7 +50,7 @@ test('测试2', () => {
     expect(data).toContain('dell');
 });
 
-test('测试2', () => {
+test('test2-测试2', () => {
     // 异常
     const throwError = () => {
         throw new Error('this is a new error1');
