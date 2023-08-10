@@ -53,7 +53,7 @@ test('测试2', () => {
 test('测试2', () => {
     // 异常
     const throwError = () => {
-        throw new Error('this is a new error');
+        throw new Error('this is a new error1');
     }
 
     expect(throwError).toThrow('this is a new error');
